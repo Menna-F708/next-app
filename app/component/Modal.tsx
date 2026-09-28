@@ -1,4 +1,11 @@
 import Image from "next/image";
+import Continuebutton from "../component/Continuebutton";
+
+
+
+
+
+
 
 function Modal() {
   return (
@@ -50,9 +57,7 @@ function Modal() {
             type="email"
             className="w-full sm:w-[340px] h-9 rounded-lg border border-[#E5E5E5] pt-[14px] pr-2.5 pb-[14px] pl-2.5"
           />
-          <button className="flex justify-center items-center w-full sm:w-[340px] h-11 rounded-[14px] pt-[12px] pr-2.5 pb-3 pl-2.5 gap-2.5 bg-[#FE5933] text-[#FFFFFF]">
-            Continue
-          </button>
+          <Continuebutton />
         </div>
 
         <p className="font-bricolage font-normal text-[14px] leading-[20px] tracking-normal text-center align-middle text-[#111111]">
