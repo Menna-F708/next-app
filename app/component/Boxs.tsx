@@ -1,6 +1,7 @@
 import { Bookmark } from "lucide-react";
 import Image from "next/image";
 import Completedlessons from "../component/layout/Dashbordcontent";
+import { Children } from "react";
 
 const boxes = [
   {
@@ -27,12 +28,12 @@ const boxes = [
   
 ];
 
-export default function Dashbordhome() {
+export default function Dashbordhome({ children }: { children?: React.ReactNode }) {
   return (
-    <div className="w-full min-h-screen bg-[#F9F9F9] py-6 sm:py-8">
+    <div className="w-full  py-6 sm:py-8">
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-8 xl:px-0 flex flex-col gap-5 sm:gap-[30px]">
         <h2 className="w-fit font-bricolage font-bold text-[24px] leading-[30px] sm:text-[30px] sm:leading-[36px] tracking-normal">
-          Dashboard
+          {children}
         </h2>
 
         {/* Cards Grid */}
@@ -82,7 +83,6 @@ export default function Dashbordhome() {
             </div>
           ))}
         </div>
-        <Completedlessons />
       </div>
     </div>
   );

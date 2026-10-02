@@ -9,7 +9,7 @@ function Navbar({
 }: {
   children: React.ReactNode;
   className?: string;
-}) {
+}) { 
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -24,7 +24,7 @@ function Navbar({
             className="w-[34px] h-[32px] sm:w-[40px] sm:h-[38px] lg:w-[46px] lg:h-[44px] ml-0 sm:ml-8 lg:ml-20"
           />
         </div>
-
+ 
         {/* Desktop / Tablet Links */}
         <div className={`hidden sm:flex navbar-right ${className ?? ""}`}>
           {children}

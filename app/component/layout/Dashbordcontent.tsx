@@ -46,22 +46,20 @@ export default function Dashbordcontent() {
   ];
 
   return (
-    <div className="w-full flex flex-col xl:flex-row gap-5">
+    <div className="w-full flex flex-col justify-center mx-auto xl:flex-row gap-5 ">
       {/* Recently completed lessons */}
       <div className="w-full min-w-0 xl:flex-1 xl:max-w-[846px] rounded-[20px] sm:rounded-[30px] border border-black bg-white px-4 pt-5 pb-5 sm:px-[30px] sm:pt-[30px] sm:pb-10">
         <h2 className="font-bricolage font-bold text-[24px] leading-[30px] sm:text-[30px] sm:leading-[36px]">
           Recently completed lessons
         </h2>
 
-        {/* Header: مخفي على الموبايل */}
-        <div className="hidden md:grid md:grid-cols-[1fr_120px_90px] xl:grid-cols-[1fr_140px_100px] gap-4 mt-6 text-[14px] lg:text-[18px]">
+         <div className="hidden md:grid md:grid-cols-[1fr_120px_90px] xl:grid-cols-[1fr_140px_100px] gap-4 mt-6 text-[14px] lg:text-[18px]">
           <span>Lessons</span>
           <span>Subject</span>
           <span className="text-right">Duration</span>
         </div>
 
-        {/* Rows */}
-        {lessons.map((lesson) => (
+         {lessons.map((lesson) => (
           <div
             key={lesson.title}
             className="grid grid-cols-[1fr_auto] md:grid-cols-[1fr_120px_90px] xl:grid-cols-[1fr_140px_100px] items-center gap-x-4 gap-y-3 py-3 sm:py-4"
